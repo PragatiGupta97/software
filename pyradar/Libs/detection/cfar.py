@@ -92,4 +92,4 @@ def cfar(signal, guard_cells, reference_cells, bias, cfar_type):
 
             cfar_threshold[ix] = z[int(1.5 * reference_cells)]
 
-    return 10.0 * log10(cfar_threshold) + bias
+    return 10.0 * log10(cfar_threshold+ bias) 
